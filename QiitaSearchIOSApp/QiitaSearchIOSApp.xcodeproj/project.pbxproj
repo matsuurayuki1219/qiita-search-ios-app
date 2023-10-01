@@ -13,6 +13,18 @@
 		D2CC3B4A2AC93C66002A2783 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2CC3B482AC93C66002A2783 /* Main.storyboard */; };
 		D2CC3B4C2AC93C6D002A2783 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2CC3B4B2AC93C6D002A2783 /* Assets.xcassets */; };
 		D2CC3B4F2AC93C6D002A2783 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2CC3B4D2AC93C6D002A2783 /* LaunchScreen.storyboard */; };
+		D2CC3B5C2AC93D65002A2783 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC3B5B2AC93D65002A2783 /* HomeViewController.swift */; };
+		D2CC3B5E2AC93E0E002A2783 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC3B5D2AC93E0E002A2783 /* HomeViewModel.swift */; };
+		D2CC3B612AC93ED5002A2783 /* HomeViewController+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC3B602AC93ED5002A2783 /* HomeViewController+View.swift */; };
+		D2CC3B642AC93F08002A2783 /* QiitaApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC3B632AC93F08002A2783 /* QiitaApiClient.swift */; };
+		D2CC3B662AC93F92002A2783 /* QiitaArticleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC3B652AC93F92002A2783 /* QiitaArticleEntity.swift */; };
+		D2CC3B692AC9409E002A2783 /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC3B682AC9409E002A2783 /* UserEntity.swift */; };
+		D2CC3B6B2AC940F7002A2783 /* TagEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC3B6A2AC940F7002A2783 /* TagEntity.swift */; };
+		D2CC3B6F2AC94588002A2783 /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC3B6E2AC94588002A2783 /* Converter.swift */; };
+		D2CC3B712AC945A9002A2783 /* QiitaArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC3B702AC945A9002A2783 /* QiitaArticleModel.swift */; };
+		D2CC3B732AC945B8002A2783 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC3B722AC945B8002A2783 /* UserModel.swift */; };
+		D2CC3B752AC945C1002A2783 /* TagModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC3B742AC945C1002A2783 /* TagModel.swift */; };
+		D2CC3B792AC946D0002A2783 /* QiitaRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC3B782AC946D0002A2783 /* QiitaRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +36,18 @@
 		D2CC3B4B2AC93C6D002A2783 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2CC3B4E2AC93C6D002A2783 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2CC3B502AC93C6D002A2783 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2CC3B5B2AC93D65002A2783 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D2CC3B5D2AC93E0E002A2783 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		D2CC3B602AC93ED5002A2783 /* HomeViewController+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+View.swift"; sourceTree = "<group>"; };
+		D2CC3B632AC93F08002A2783 /* QiitaApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaApiClient.swift; sourceTree = "<group>"; };
+		D2CC3B652AC93F92002A2783 /* QiitaArticleEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaArticleEntity.swift; sourceTree = "<group>"; };
+		D2CC3B682AC9409E002A2783 /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
+		D2CC3B6A2AC940F7002A2783 /* TagEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagEntity.swift; sourceTree = "<group>"; };
+		D2CC3B6E2AC94588002A2783 /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
+		D2CC3B702AC945A9002A2783 /* QiitaArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaArticleModel.swift; sourceTree = "<group>"; };
+		D2CC3B722AC945B8002A2783 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		D2CC3B742AC945C1002A2783 /* TagModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagModel.swift; sourceTree = "<group>"; };
+		D2CC3B782AC946D0002A2783 /* QiitaRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +80,11 @@
 		D2CC3B412AC93C66002A2783 /* QiitaSearchIOSApp */ = {
 			isa = PBXGroup;
 			children = (
+				D2CC3B772AC946C4002A2783 /* Repository */,
+				D2CC3B622AC93EF0002A2783 /* API */,
+				D2CC3B5A2AC93D55002A2783 /* Model */,
+				D2CC3B582AC93D28002A2783 /* Utility */,
+				D2CC3B562AC93D16002A2783 /* ViewController */,
 				D2CC3B422AC93C66002A2783 /* AppDelegate.swift */,
 				D2CC3B442AC93C66002A2783 /* SceneDelegate.swift */,
 				D2CC3B462AC93C66002A2783 /* ViewController.swift */,
@@ -65,6 +94,69 @@
 				D2CC3B502AC93C6D002A2783 /* Info.plist */,
 			);
 			path = QiitaSearchIOSApp;
+			sourceTree = "<group>";
+		};
+		D2CC3B562AC93D16002A2783 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D2CC3B5F2AC93EB8002A2783 /* Home */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D2CC3B582AC93D28002A2783 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		D2CC3B5A2AC93D55002A2783 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D2CC3B702AC945A9002A2783 /* QiitaArticleModel.swift */,
+				D2CC3B722AC945B8002A2783 /* UserModel.swift */,
+				D2CC3B742AC945C1002A2783 /* TagModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D2CC3B5F2AC93EB8002A2783 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D2CC3B5B2AC93D65002A2783 /* HomeViewController.swift */,
+				D2CC3B602AC93ED5002A2783 /* HomeViewController+View.swift */,
+				D2CC3B5D2AC93E0E002A2783 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D2CC3B622AC93EF0002A2783 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				D2CC3B672AC94092002A2783 /* Entity */,
+				D2CC3B632AC93F08002A2783 /* QiitaApiClient.swift */,
+				D2CC3B6E2AC94588002A2783 /* Converter.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		D2CC3B672AC94092002A2783 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				D2CC3B652AC93F92002A2783 /* QiitaArticleEntity.swift */,
+				D2CC3B6A2AC940F7002A2783 /* TagEntity.swift */,
+				D2CC3B682AC9409E002A2783 /* UserEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		D2CC3B772AC946C4002A2783 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				D2CC3B782AC946D0002A2783 /* QiitaRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +230,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2CC3B642AC93F08002A2783 /* QiitaApiClient.swift in Sources */,
+				D2CC3B6F2AC94588002A2783 /* Converter.swift in Sources */,
 				D2CC3B472AC93C66002A2783 /* ViewController.swift in Sources */,
 				D2CC3B432AC93C66002A2783 /* AppDelegate.swift in Sources */,
+				D2CC3B612AC93ED5002A2783 /* HomeViewController+View.swift in Sources */,
+				D2CC3B732AC945B8002A2783 /* UserModel.swift in Sources */,
+				D2CC3B692AC9409E002A2783 /* UserEntity.swift in Sources */,
+				D2CC3B662AC93F92002A2783 /* QiitaArticleEntity.swift in Sources */,
+				D2CC3B752AC945C1002A2783 /* TagModel.swift in Sources */,
+				D2CC3B712AC945A9002A2783 /* QiitaArticleModel.swift in Sources */,
+				D2CC3B792AC946D0002A2783 /* QiitaRepository.swift in Sources */,
 				D2CC3B452AC93C66002A2783 /* SceneDelegate.swift in Sources */,
+				D2CC3B6B2AC940F7002A2783 /* TagEntity.swift in Sources */,
+				D2CC3B5E2AC93E0E002A2783 /* HomeViewModel.swift in Sources */,
+				D2CC3B5C2AC93D65002A2783 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
