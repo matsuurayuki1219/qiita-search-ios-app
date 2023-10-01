@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		D2CC3B432AC93C66002A2783 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC3B422AC93C66002A2783 /* AppDelegate.swift */; };
 		D2CC3B452AC93C66002A2783 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC3B442AC93C66002A2783 /* SceneDelegate.swift */; };
-		D2CC3B472AC93C66002A2783 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC3B462AC93C66002A2783 /* ViewController.swift */; };
 		D2CC3B4A2AC93C66002A2783 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2CC3B482AC93C66002A2783 /* Main.storyboard */; };
 		D2CC3B4C2AC93C6D002A2783 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2CC3B4B2AC93C6D002A2783 /* Assets.xcassets */; };
 		D2CC3B4F2AC93C6D002A2783 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2CC3B4D2AC93C6D002A2783 /* LaunchScreen.storyboard */; };
@@ -31,7 +30,6 @@
 		D2CC3B3F2AC93C66002A2783 /* QiitaSearchIOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QiitaSearchIOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2CC3B422AC93C66002A2783 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2CC3B442AC93C66002A2783 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D2CC3B462AC93C66002A2783 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D2CC3B492AC93C66002A2783 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D2CC3B4B2AC93C6D002A2783 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2CC3B4E2AC93C6D002A2783 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -87,7 +85,6 @@
 				D2CC3B562AC93D16002A2783 /* ViewController */,
 				D2CC3B422AC93C66002A2783 /* AppDelegate.swift */,
 				D2CC3B442AC93C66002A2783 /* SceneDelegate.swift */,
-				D2CC3B462AC93C66002A2783 /* ViewController.swift */,
 				D2CC3B482AC93C66002A2783 /* Main.storyboard */,
 				D2CC3B4B2AC93C6D002A2783 /* Assets.xcassets */,
 				D2CC3B4D2AC93C6D002A2783 /* LaunchScreen.storyboard */,
@@ -232,7 +229,6 @@
 			files = (
 				D2CC3B642AC93F08002A2783 /* QiitaApiClient.swift in Sources */,
 				D2CC3B6F2AC94588002A2783 /* Converter.swift in Sources */,
-				D2CC3B472AC93C66002A2783 /* ViewController.swift in Sources */,
 				D2CC3B432AC93C66002A2783 /* AppDelegate.swift in Sources */,
 				D2CC3B612AC93ED5002A2783 /* HomeViewController+View.swift in Sources */,
 				D2CC3B732AC945B8002A2783 /* UserModel.swift in Sources */,
