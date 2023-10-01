@@ -6,7 +6,13 @@
 //
 
 import Foundation
+import UIKit
 
 extension HomeViewController {
 
+    class QiitaArticleTableView: UIView {
+
+
+
+    }
 }

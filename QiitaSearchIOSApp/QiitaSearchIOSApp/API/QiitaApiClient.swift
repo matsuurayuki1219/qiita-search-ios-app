@@ -14,11 +14,11 @@ class QiitaApiClient {
 
     private init() {}
 
-    func searchQiitaArticles(page: Int, perPage: Int) -> AnyPublisher<QiitaArticleEntity, Error> {
+    func searchQiitaArticles(page: Int, perPage: Int) -> AnyPublisher<[QiitaArticleEntity], Error> {
         let url = URL(string: "https://qiita.com/api/v2/items/?page=\(page)&per_page=\(perPage)")!
         return URLSession.shared.dataTaskPublisher(for: url)
             .map { $0.data }
-            .decode(type: QiitaArticleEntity.self, decoder: JSONDecoder())
+            .decode(type: [QiitaArticleEntity].self, decoder: JSONDecoder())
             .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
     }

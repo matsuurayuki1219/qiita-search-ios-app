@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D21538E22AC99C160012C2CE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D21538E42AC99C160012C2CE /* Localizable.strings */; };
+		D21538E72AC99CC10012C2CE /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = D21538E62AC99CC10012C2CE /* Nuke */; };
+		D21538E92AC99CC10012C2CE /* NukeExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = D21538E82AC99CC10012C2CE /* NukeExtensions */; };
+		D26BC7732AC94EAC0022BF78 /* HomeViewController+QiitaArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26BC7722AC94EAC0022BF78 /* HomeViewController+QiitaArticleView.swift */; };
 		D2CC3B432AC93C66002A2783 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC3B422AC93C66002A2783 /* AppDelegate.swift */; };
 		D2CC3B452AC93C66002A2783 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC3B442AC93C66002A2783 /* SceneDelegate.swift */; };
 		D2CC3B4A2AC93C66002A2783 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2CC3B482AC93C66002A2783 /* Main.storyboard */; };
@@ -14,7 +18,7 @@
 		D2CC3B4F2AC93C6D002A2783 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2CC3B4D2AC93C6D002A2783 /* LaunchScreen.storyboard */; };
 		D2CC3B5C2AC93D65002A2783 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC3B5B2AC93D65002A2783 /* HomeViewController.swift */; };
 		D2CC3B5E2AC93E0E002A2783 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC3B5D2AC93E0E002A2783 /* HomeViewModel.swift */; };
-		D2CC3B612AC93ED5002A2783 /* HomeViewController+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC3B602AC93ED5002A2783 /* HomeViewController+View.swift */; };
+		D2CC3B612AC93ED5002A2783 /* HomeViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC3B602AC93ED5002A2783 /* HomeViewController+TableView.swift */; };
 		D2CC3B642AC93F08002A2783 /* QiitaApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC3B632AC93F08002A2783 /* QiitaApiClient.swift */; };
 		D2CC3B662AC93F92002A2783 /* QiitaArticleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC3B652AC93F92002A2783 /* QiitaArticleEntity.swift */; };
 		D2CC3B692AC9409E002A2783 /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC3B682AC9409E002A2783 /* UserEntity.swift */; };
@@ -27,6 +31,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D21538DE2AC99BBE0012C2CE /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		D21538DF2AC99BBE0012C2CE /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		D21538E32AC99C160012C2CE /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D26BC7722AC94EAC0022BF78 /* HomeViewController+QiitaArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+QiitaArticleView.swift"; sourceTree = "<group>"; };
 		D2CC3B3F2AC93C66002A2783 /* QiitaSearchIOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QiitaSearchIOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2CC3B422AC93C66002A2783 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2CC3B442AC93C66002A2783 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,7 +44,7 @@
 		D2CC3B502AC93C6D002A2783 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2CC3B5B2AC93D65002A2783 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D2CC3B5D2AC93E0E002A2783 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		D2CC3B602AC93ED5002A2783 /* HomeViewController+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+View.swift"; sourceTree = "<group>"; };
+		D2CC3B602AC93ED5002A2783 /* HomeViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+TableView.swift"; sourceTree = "<group>"; };
 		D2CC3B632AC93F08002A2783 /* QiitaApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaApiClient.swift; sourceTree = "<group>"; };
 		D2CC3B652AC93F92002A2783 /* QiitaArticleEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaArticleEntity.swift; sourceTree = "<group>"; };
 		D2CC3B682AC9409E002A2783 /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
@@ -53,6 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D21538E72AC99CC10012C2CE /* Nuke in Frameworks */,
+				D21538E92AC99CC10012C2CE /* NukeExtensions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +72,7 @@
 		D2CC3B362AC93C66002A2783 = {
 			isa = PBXGroup;
 			children = (
+				D21538E42AC99C160012C2CE /* Localizable.strings */,
 				D2CC3B412AC93C66002A2783 /* QiitaSearchIOSApp */,
 				D2CC3B402AC93C66002A2783 /* Products */,
 			);
@@ -122,7 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				D2CC3B5B2AC93D65002A2783 /* HomeViewController.swift */,
-				D2CC3B602AC93ED5002A2783 /* HomeViewController+View.swift */,
+				D2CC3B602AC93ED5002A2783 /* HomeViewController+TableView.swift */,
+				D26BC7722AC94EAC0022BF78 /* HomeViewController+QiitaArticleView.swift */,
 				D2CC3B5D2AC93E0E002A2783 /* HomeViewModel.swift */,
 			);
 			path = Home;
@@ -172,6 +184,10 @@
 			dependencies = (
 			);
 			name = QiitaSearchIOSApp;
+			packageProductDependencies = (
+				D21538E62AC99CC10012C2CE /* Nuke */,
+				D21538E82AC99CC10012C2CE /* NukeExtensions */,
+			);
 			productName = QiitaSearchIOSApp;
 			productReference = D2CC3B3F2AC93C66002A2783 /* QiitaSearchIOSApp.app */;
 			productType = "com.apple.product-type.application";
@@ -198,8 +214,12 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = D2CC3B362AC93C66002A2783;
+			packageReferences = (
+				D21538E52AC99CC10012C2CE /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
 			productRefGroup = D2CC3B402AC93C66002A2783 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -215,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2CC3B4F2AC93C6D002A2783 /* LaunchScreen.storyboard in Resources */,
+				D21538E22AC99C160012C2CE /* Localizable.strings in Resources */,
 				D2CC3B4C2AC93C6D002A2783 /* Assets.xcassets in Resources */,
 				D2CC3B4A2AC93C66002A2783 /* Main.storyboard in Resources */,
 			);
@@ -230,13 +251,14 @@
 				D2CC3B642AC93F08002A2783 /* QiitaApiClient.swift in Sources */,
 				D2CC3B6F2AC94588002A2783 /* Converter.swift in Sources */,
 				D2CC3B432AC93C66002A2783 /* AppDelegate.swift in Sources */,
-				D2CC3B612AC93ED5002A2783 /* HomeViewController+View.swift in Sources */,
+				D2CC3B612AC93ED5002A2783 /* HomeViewController+TableView.swift in Sources */,
 				D2CC3B732AC945B8002A2783 /* UserModel.swift in Sources */,
 				D2CC3B692AC9409E002A2783 /* UserEntity.swift in Sources */,
 				D2CC3B662AC93F92002A2783 /* QiitaArticleEntity.swift in Sources */,
 				D2CC3B752AC945C1002A2783 /* TagModel.swift in Sources */,
 				D2CC3B712AC945A9002A2783 /* QiitaArticleModel.swift in Sources */,
 				D2CC3B792AC946D0002A2783 /* QiitaRepository.swift in Sources */,
+				D26BC7732AC94EAC0022BF78 /* HomeViewController+QiitaArticleView.swift in Sources */,
 				D2CC3B452AC93C66002A2783 /* SceneDelegate.swift in Sources */,
 				D2CC3B6B2AC940F7002A2783 /* TagEntity.swift in Sources */,
 				D2CC3B5E2AC93E0E002A2783 /* HomeViewModel.swift in Sources */,
@@ -247,10 +269,19 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		D21538E42AC99C160012C2CE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D21538E32AC99C160012C2CE /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		D2CC3B482AC93C66002A2783 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				D2CC3B492AC93C66002A2783 /* Base */,
+				D21538DE2AC99BBE0012C2CE /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -259,6 +290,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				D2CC3B4E2AC93C6D002A2783 /* Base */,
+				D21538DF2AC99BBE0012C2CE /* ja */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -270,6 +302,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -330,6 +363,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -458,6 +492,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D21538E52AC99CC10012C2CE /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D21538E62AC99CC10012C2CE /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D21538E52AC99CC10012C2CE /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+		D21538E82AC99CC10012C2CE /* NukeExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D21538E52AC99CC10012C2CE /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeExtensions;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D2CC3B372AC93C66002A2783 /* Project object */;
 }

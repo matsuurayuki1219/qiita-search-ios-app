@@ -6,8 +6,30 @@
 //
 
 import Foundation
+import Combine
 
-class HomeViewModel {
+class HomeViewModel: ObservableObject {
 
+    private let repository: QiitaRepository
 
+    @Published var articles: [QiitaArticleModel] = []
+    private var cancellables = Set<AnyCancellable>()
+
+    init(repository: QiitaRepository = QiitaRepository()) {
+        self.repository = repository
+    }
+
+    func searchQiitaArticles() {
+        repository.searchQiitaArticles(page: 1, perPage: 20)
+            .sink { completion in
+                switch completion {
+                case .finished:
+                    break
+                case .failure(_):
+                    break
+                }
+            } receiveValue: { articles in
+                self.articles = articles
+            }.store(in: &cancellables)
+    }
 }

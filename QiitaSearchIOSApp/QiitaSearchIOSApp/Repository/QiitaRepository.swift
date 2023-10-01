@@ -10,9 +10,9 @@ import Combine
 
 class QiitaRepository {
 
-    func searchQiitaArticles(page: Int, perPage: Int) -> AnyPublisher<QiitaArticleModel, Error> {
+    func searchQiitaArticles(page: Int, perPage: Int) -> AnyPublisher<[QiitaArticleModel], Error> {
         return QiitaApiClient.shared.searchQiitaArticles(page: page, perPage: perPage)
-            .map { $0.toModel() }
+            .map { $0.map { $0.toModel() } }
             .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
     }
