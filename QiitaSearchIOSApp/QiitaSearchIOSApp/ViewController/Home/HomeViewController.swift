@@ -6,24 +6,91 @@
 //
 
 import UIKit
+import Combine
 
 class HomeViewController: UIViewController {
 
-    let viewModel = HomeViewModel()
+    // MARK: - Subview
 
-    private lazy var qiitaArticleView = {
-        return QiitaArticleView()
+    private lazy var tableView = {
+        let tableView = UITableView()
+        tableView.register(QiitaArticleCell.self, forCellReuseIdentifier: QiitaArticleCell.id)
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        return tableView
     }()
+
+    // MARK: - Combine
+
+    private let viewModel = HomeViewModel()
+    private var cancellable: AnyCancellable?
+
+    // MARK: - Model
+    private var articles: [QiitaArticleModel] = [] {
+        didSet {
+            tableView.reloadData()
+        }
+    }
+
+    // MARK: - UIViewController Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(qiitaArticleView)
-        viewModel.searchQiitaArticles()
-    }
+        
+        view.addSubview(tableView)
+        setConstraint()
 
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        qiitaArticleView.frame = CGRect(x: 20, y: 20, width: view.frame.width - 40, height: 80)
+        viewModel.searchQiitaArticles()
+        addObserver()
     }
 
 }
+
+// MARK: - Private
+
+private extension HomeViewController {
+
+    func setConstraint() {
+        tableView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+    }
+
+    func addObserver() {
+        cancellable = viewModel.$articles
+            .sink { completion in
+                switch completion {
+                case .finished:
+                    break
+                case .failure(_):
+                    break
+                }
+            } receiveValue: { articles in
+                self.articles = articles
+            }
+    }
+
+}
+
+// MARK: - UITableViewDataSource
+
+extension HomeViewController: UITableViewDataSource {
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return articles.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: QiitaArticleCell.id, for: indexPath)
+        if let cell = cell as? QiitaArticleCell {
+            cell.article = articles[indexPath.row]
+        }
+        return cell
+    }
+}
+
+// MARK: - UITableViewDelegate
+
+extension HomeViewController: UITableViewDelegate {}
