@@ -8,6 +8,15 @@
         "revision" : "3f666f120b63ea7de57d42e9a7c9b47f8e7a290b",
         "version" : "12.1.6"
       }
+    },
+    {
+      "identity" : "uicolor-hex-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/yeahdongcn/UIColor-Hex-Swift.git",
+      "state" : {
+        "revision" : "f37f97bc1a5b545b39ab5330e133e56fa4f38cff",
+        "version" : "5.1.9"
+      }
     }
   ],
   "version" : 2

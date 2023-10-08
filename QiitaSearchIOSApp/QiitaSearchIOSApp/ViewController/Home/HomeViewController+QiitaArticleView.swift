@@ -25,6 +25,7 @@ extension HomeViewController {
         private lazy var userNameLabel: UILabel = {
             let label = UILabel()
             label.font = .regular14
+            label.textColor = .black10
             label.translatesAutoresizingMaskIntoConstraints = false
             return label
         }()
@@ -32,6 +33,7 @@ extension HomeViewController {
         private lazy var createdAtLabel: UILabel = {
             let label = UILabel()
             label.font = .regular14
+            label.textColor = .gray50
             label.translatesAutoresizingMaskIntoConstraints = false
             return label
         }()
@@ -40,14 +42,17 @@ extension HomeViewController {
             let label = UILabel()
             label.translatesAutoresizingMaskIntoConstraints = false
             label.numberOfLines = 0
-            label.font = .regular18
+            label.font = .bold18
+            label.textColor = .black10
+
             return label
         }()
 
         private lazy var favoriteImageView = {
-            let image = UIImage(systemName: "paperclip")
+            let image = UIImage(systemName: "heart")
             let imageView = UIImageView()
             imageView.image = image
+            imageView.tintColor = .gray50
             imageView.translatesAutoresizingMaskIntoConstraints = false
             return imageView
         }()
@@ -55,6 +60,7 @@ extension HomeViewController {
         private lazy var favoriteLabel = {
             let label = UILabel()
             label.font = .regular16
+            label.textColor = .black10
             label.translatesAutoresizingMaskIntoConstraints = false
             return label
         }()
@@ -64,7 +70,7 @@ extension HomeViewController {
         override init(frame: CGRect) {
             super.init(frame: frame)
 
-            backgroundColor = .cyan
+            backgroundColor = .gray40
             layer.cornerRadius = 12
 
             addSubview(profileImage)
@@ -73,7 +79,7 @@ extension HomeViewController {
             addSubview(titleLabel)
             addSubview(favoriteImageView)
             addSubview(favoriteLabel)
-
+            
             setConstraint()
         }
 
@@ -87,7 +93,7 @@ extension HomeViewController {
             guard let article = article else { return }
             guard let url = URL(string: article.user.profileImageUrl) else { return }
             NukeExtensions.loadImage(with: url, into: profileImage.roundCorner())
-            userNameLabel.text = article.user.name
+            userNameLabel.text = article.user.id
             createdAtLabel.text = article.createdAt
             titleLabel.text = article.title
             favoriteLabel.text = String(article.likesCount)
@@ -97,7 +103,7 @@ extension HomeViewController {
 
 }
 
-// MARK: - Private
+// MARK: - Constraint
 
 private extension HomeViewController.QiitaArticleView {
 
@@ -117,11 +123,12 @@ private extension HomeViewController.QiitaArticleView {
         createdAtLabel.bottomAnchor.constraint(equalTo: profileImage.bottomAnchor).isActive = true
 
         titleLabel.leadingAnchor.constraint(equalTo: profileImage.leadingAnchor).isActive = true
-        titleLabel.topAnchor.constraint(equalTo: profileImage.bottomAnchor, constant: 12).isActive = true
+        titleLabel.topAnchor.constraint(equalTo: profileImage.bottomAnchor, constant: 16).isActive = true
         titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20).isActive = true
 
         favoriteImageView.leadingAnchor.constraint(equalTo: profileImage.leadingAnchor).isActive = true
         favoriteImageView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 12).isActive = true
+        favoriteImageView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -16).isActive = true
 
         favoriteLabel.leadingAnchor.constraint(equalTo: favoriteImageView.trailingAnchor, constant: 12).isActive = true
         favoriteLabel.topAnchor.constraint(equalTo: favoriteImageView.topAnchor).isActive = true

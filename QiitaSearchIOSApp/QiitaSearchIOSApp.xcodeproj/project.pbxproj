@@ -30,6 +30,8 @@
 		D2CC3B732AC945B8002A2783 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC3B722AC945B8002A2783 /* UserModel.swift */; };
 		D2CC3B752AC945C1002A2783 /* TagModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC3B742AC945C1002A2783 /* TagModel.swift */; };
 		D2CC3B792AC946D0002A2783 /* QiitaRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC3B782AC946D0002A2783 /* QiitaRepository.swift */; };
+		D2D14BB12AD289E9008BCDC1 /* UIColor+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D14BB02AD289E9008BCDC1 /* UIColor+Util.swift */; };
+		D2D14BB42AD28A51008BCDC1 /* UIColorHexSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D2D14BB32AD28A51008BCDC1 /* UIColorHexSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,7 @@
 		D2CC3B722AC945B8002A2783 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		D2CC3B742AC945C1002A2783 /* TagModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagModel.swift; sourceTree = "<group>"; };
 		D2CC3B782AC946D0002A2783 /* QiitaRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaRepository.swift; sourceTree = "<group>"; };
+		D2D14BB02AD289E9008BCDC1 /* UIColor+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Util.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2D14BB42AD28A51008BCDC1 /* UIColorHexSwift in Frameworks */,
 				D21538E72AC99CC10012C2CE /* Nuke in Frameworks */,
 				D21538E92AC99CC10012C2CE /* NukeExtensions in Frameworks */,
 			);
@@ -128,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				D27C763A2AD1383700A1348A /* UIFont+Util.swift */,
+				D2D14BB02AD289E9008BCDC1 /* UIColor+Util.swift */,
 				D27C763C2AD1396000A1348A /* UIImageView+Util.swift */,
 			);
 			path = Utility;
@@ -201,6 +206,7 @@
 			packageProductDependencies = (
 				D21538E62AC99CC10012C2CE /* Nuke */,
 				D21538E82AC99CC10012C2CE /* NukeExtensions */,
+				D2D14BB32AD28A51008BCDC1 /* UIColorHexSwift */,
 			);
 			productName = QiitaSearchIOSApp;
 			productReference = D2CC3B3F2AC93C66002A2783 /* QiitaSearchIOSApp.app */;
@@ -233,6 +239,7 @@
 			mainGroup = D2CC3B362AC93C66002A2783;
 			packageReferences = (
 				D21538E52AC99CC10012C2CE /* XCRemoteSwiftPackageReference "Nuke" */,
+				D2D14BB22AD28A51008BCDC1 /* XCRemoteSwiftPackageReference "UIColor-Hex-Swift" */,
 			);
 			productRefGroup = D2CC3B402AC93C66002A2783 /* Products */;
 			projectDirPath = "";
@@ -273,6 +280,7 @@
 				D2CC3B752AC945C1002A2783 /* TagModel.swift in Sources */,
 				D2CC3B712AC945A9002A2783 /* QiitaArticleModel.swift in Sources */,
 				D2CC3B792AC946D0002A2783 /* QiitaRepository.swift in Sources */,
+				D2D14BB12AD289E9008BCDC1 /* UIColor+Util.swift in Sources */,
 				D27C763B2AD1383700A1348A /* UIFont+Util.swift in Sources */,
 				D26BC7732AC94EAC0022BF78 /* HomeViewController+QiitaArticleView.swift in Sources */,
 				D2CC3B452AC93C66002A2783 /* SceneDelegate.swift in Sources */,
@@ -518,6 +526,14 @@
 				minimumVersion = 12.0.0;
 			};
 		};
+		D2D14BB22AD28A51008BCDC1 /* XCRemoteSwiftPackageReference "UIColor-Hex-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yeahdongcn/UIColor-Hex-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -530,6 +546,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D21538E52AC99CC10012C2CE /* XCRemoteSwiftPackageReference "Nuke" */;
 			productName = NukeExtensions;
+		};
+		D2D14BB32AD28A51008BCDC1 /* UIColorHexSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D2D14BB22AD28A51008BCDC1 /* XCRemoteSwiftPackageReference "UIColor-Hex-Swift" */;
+			productName = UIColorHexSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
