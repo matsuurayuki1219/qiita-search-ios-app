@@ -13,14 +13,19 @@ class HomeViewModel: ObservableObject {
     private let repository: QiitaRepository
 
     @Published var articles: [QiitaArticleModel] = []
+
     private var cancellables = Set<AnyCancellable>()
 
     init(repository: QiitaRepository = QiitaRepository()) {
         self.repository = repository
     }
 
-    func searchQiitaArticles() {
-        repository.searchQiitaArticles(page: 1, perPage: 20)
+    func searchQiitaArticles(query: String?) {
+        if ((query?.isEmpty) != nil) {
+            return
+        }
+
+        repository.searchQiitaArticles(page: 1, perPage: 20, query: query)
             .sink { completion in
                 switch completion {
                 case .finished:

@@ -12,6 +12,13 @@ class HomeViewController: UIViewController {
 
     // MARK: - Subview
 
+    private lazy var searchBar = {
+        let bar = UISearchBar()
+        bar.translatesAutoresizingMaskIntoConstraints = false
+        bar.delegate = self
+        return bar
+    }()
+
     private lazy var tableView = {
         let tableView = UITableView()
         tableView.register(QiitaArticleCell.self, forCellReuseIdentifier: QiitaArticleCell.id)
@@ -39,12 +46,15 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         view.addSubview(tableView)
         setConstraint()
-
-        viewModel.searchQiitaArticles()
         addObserver()
+
+        if let navigationBarFrame = navigationController?.navigationBar.bounds {
+            searchBar.frame = navigationBarFrame
+        }
+
+        viewModel.searchQiitaArticles(query: nil)
     }
 
 }
@@ -127,4 +137,18 @@ extension HomeViewController: UITableViewDelegate {
         }
     }
 
+}
+
+// MARK: - UISearchBarDelegate
+
+extension HomeViewController: UISearchBarDelegate {
+
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        view.endEditing(true)
+        if let word = searchBar.text {
+            viewModel.searchQiitaArticles(query: word)
+        }
+    }
+
+    
 }
