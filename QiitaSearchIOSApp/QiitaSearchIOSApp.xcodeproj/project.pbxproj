@@ -10,7 +10,7 @@
 		D21538E22AC99C160012C2CE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D21538E42AC99C160012C2CE /* Localizable.strings */; };
 		D21538E72AC99CC10012C2CE /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = D21538E62AC99CC10012C2CE /* Nuke */; };
 		D21538E92AC99CC10012C2CE /* NukeExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = D21538E82AC99CC10012C2CE /* NukeExtensions */; };
-		D26BC7732AC94EAC0022BF78 /* HomeViewController+QiitaArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26BC7722AC94EAC0022BF78 /* HomeViewController+QiitaArticle.swift */; };
+		D26BC7732AC94EAC0022BF78 /* HomeViewController+QiitaArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26BC7722AC94EAC0022BF78 /* HomeViewController+QiitaArticleView.swift */; };
 		D27C763B2AD1383700A1348A /* UIFont+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27C763A2AD1383700A1348A /* UIFont+Util.swift */; };
 		D27C763D2AD1396000A1348A /* UIImageView+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27C763C2AD1396000A1348A /* UIImageView+Util.swift */; };
 		D27C763F2AD13E3600A1348A /* HomeViewController+QiitaArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27C763E2AD13E3600A1348A /* HomeViewController+QiitaArticleCell.swift */; };
@@ -36,7 +36,7 @@
 		D21538DE2AC99BBE0012C2CE /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		D21538DF2AC99BBE0012C2CE /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		D21538E32AC99C160012C2CE /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
-		D26BC7722AC94EAC0022BF78 /* HomeViewController+QiitaArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+QiitaArticle.swift"; sourceTree = "<group>"; };
+		D26BC7722AC94EAC0022BF78 /* HomeViewController+QiitaArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+QiitaArticleView.swift"; sourceTree = "<group>"; };
 		D27C763A2AD1383700A1348A /* UIFont+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Util.swift"; sourceTree = "<group>"; };
 		D27C763C2AD1396000A1348A /* UIImageView+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Util.swift"; sourceTree = "<group>"; };
 		D27C763E2AD13E3600A1348A /* HomeViewController+QiitaArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+QiitaArticleCell.swift"; sourceTree = "<group>"; };
@@ -146,7 +146,7 @@
 		D2CC3B5F2AC93EB8002A2783 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				D26BC7722AC94EAC0022BF78 /* HomeViewController+QiitaArticle.swift */,
+				D26BC7722AC94EAC0022BF78 /* HomeViewController+QiitaArticleView.swift */,
 				D2CC3B5B2AC93D65002A2783 /* HomeViewController.swift */,
 				D27C763E2AD13E3600A1348A /* HomeViewController+QiitaArticleCell.swift */,
 				D2CC3B5D2AC93E0E002A2783 /* HomeViewModel.swift */,
@@ -274,7 +274,7 @@
 				D2CC3B712AC945A9002A2783 /* QiitaArticleModel.swift in Sources */,
 				D2CC3B792AC946D0002A2783 /* QiitaRepository.swift in Sources */,
 				D27C763B2AD1383700A1348A /* UIFont+Util.swift in Sources */,
-				D26BC7732AC94EAC0022BF78 /* HomeViewController+QiitaArticle.swift in Sources */,
+				D26BC7732AC94EAC0022BF78 /* HomeViewController+QiitaArticleView.swift in Sources */,
 				D2CC3B452AC93C66002A2783 /* SceneDelegate.swift in Sources */,
 				D2CC3B6B2AC940F7002A2783 /* TagEntity.swift in Sources */,
 				D2CC3B5E2AC93E0E002A2783 /* HomeViewModel.swift in Sources */,

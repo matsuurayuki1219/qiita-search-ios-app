@@ -12,7 +12,7 @@ import NukeExtensions
 
 extension HomeViewController {
 
-    class QiitaArticle: UIView {
+    class QiitaArticleView: UIView {
 
         // MARK: - Subview
 
@@ -99,7 +99,7 @@ extension HomeViewController {
 
 // MARK: - Private
 
-private extension HomeViewController.QiitaArticle {
+private extension HomeViewController.QiitaArticleView {
 
     func setConstraint() {
 

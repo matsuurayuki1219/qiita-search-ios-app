@@ -21,7 +21,7 @@ extension HomeViewController {
         }
 
         lazy var articleView = {
-            let view = QiitaArticle()
+            let view = QiitaArticleView()
             return view
         }()
 
