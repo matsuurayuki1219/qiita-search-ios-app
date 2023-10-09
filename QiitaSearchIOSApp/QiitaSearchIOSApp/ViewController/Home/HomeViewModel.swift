@@ -21,10 +21,6 @@ class HomeViewModel: ObservableObject {
     }
 
     func searchQiitaArticles(query: String?) {
-        if ((query?.isEmpty) != nil) {
-            return
-        }
-
         repository.searchQiitaArticles(page: 1, perPage: 20, query: query)
             .sink { completion in
                 switch completion {

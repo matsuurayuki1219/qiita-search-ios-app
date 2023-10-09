@@ -11,6 +11,7 @@
 		D21538E92AC99CC10012C2CE /* NukeExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = D21538E82AC99CC10012C2CE /* NukeExtensions */; };
 		D26BC7732AC94EAC0022BF78 /* HomeViewController+QiitaArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26BC7722AC94EAC0022BF78 /* HomeViewController+QiitaArticleView.swift */; };
 		D26DCEC12AD42D8400FFD4E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D26DCEC02AD42D8400FFD4E4 /* LaunchScreen.storyboard */; };
+		D26DCECB2AD4310400FFD4E4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D26DCECD2AD4310400FFD4E4 /* Localizable.strings */; };
 		D27C763B2AD1383700A1348A /* UIFont+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27C763A2AD1383700A1348A /* UIFont+Util.swift */; };
 		D27C763D2AD1396000A1348A /* UIImageView+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27C763C2AD1396000A1348A /* UIImageView+Util.swift */; };
 		D27C763F2AD13E3600A1348A /* HomeViewController+QiitaArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27C763E2AD13E3600A1348A /* HomeViewController+QiitaArticleCell.swift */; };
@@ -35,6 +36,7 @@
 /* Begin PBXFileReference section */
 		D26BC7722AC94EAC0022BF78 /* HomeViewController+QiitaArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+QiitaArticleView.swift"; sourceTree = "<group>"; };
 		D26DCEC02AD42D8400FFD4E4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D26DCECC2AD4310400FFD4E4 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D27C763A2AD1383700A1348A /* UIFont+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Util.swift"; sourceTree = "<group>"; };
 		D27C763C2AD1396000A1348A /* UIImageView+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Util.swift"; sourceTree = "<group>"; };
 		D27C763E2AD13E3600A1348A /* HomeViewController+QiitaArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+QiitaArticleCell.swift"; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 		D2CC3B362AC93C66002A2783 = {
 			isa = PBXGroup;
 			children = (
+				D26DCECD2AD4310400FFD4E4 /* Localizable.strings */,
 				D2CC3B412AC93C66002A2783 /* QiitaSearchIOSApp */,
 				D2CC3B402AC93C66002A2783 /* Products */,
 			);
@@ -221,7 +224,7 @@
 			};
 			buildConfigurationList = D2CC3B3A2AC93C66002A2783 /* Build configuration list for PBXProject "QiitaSearchIOSApp" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = ja;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -248,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2CC3B4C2AC93C6D002A2783 /* Assets.xcassets in Resources */,
+				D26DCECB2AD4310400FFD4E4 /* Localizable.strings in Resources */,
 				D26DCEC12AD42D8400FFD4E4 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +285,17 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D26DCECD2AD4310400FFD4E4 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D26DCECC2AD4310400FFD4E4 /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D2CC3B512AC93C6D002A2783 /* Debug */ = {

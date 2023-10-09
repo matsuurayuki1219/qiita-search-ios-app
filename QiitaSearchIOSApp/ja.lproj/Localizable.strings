@@ -2,6 +2,8 @@
   Localizable.strings
   QiitaSearchIOSApp
 
-  Created by 松浦裕久 on 2023/10/01.
+  Created by 松浦裕久 on 2023/10/09.
   
 */
+
+"home.seach_filed_placeholder" = "記事を検索しよう";

@@ -12,11 +12,13 @@ class HomeViewController: UIViewController {
 
     // MARK: - Subview
 
-    private lazy var searchBar = {
-        let bar = UISearchBar()
-        bar.translatesAutoresizingMaskIntoConstraints = false
-        bar.delegate = self
-        return bar
+    private lazy var searchBar: UISearchBar = {
+        let searchBar: UISearchBar = UISearchBar()
+        searchBar.delegate = self
+        searchBar.placeholder = NSLocalizedString("home.seach_filed_placeholder", comment: "")
+        searchBar.tintColor = UIColor.gray
+        searchBar.keyboardType = UIKeyboardType.default
+        return searchBar
     }()
 
     private lazy var tableView = {
@@ -46,12 +48,15 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         view.addSubview(tableView)
         setConstraint()
         addObserver()
 
         if let navigationBarFrame = navigationController?.navigationBar.bounds {
             searchBar.frame = navigationBarFrame
+            navigationItem.titleView = searchBar
+            navigationItem.titleView?.frame = searchBar.frame
         }
 
         viewModel.searchQiitaArticles(query: nil)
@@ -144,11 +149,10 @@ extension HomeViewController: UITableViewDelegate {
 extension HomeViewController: UISearchBarDelegate {
 
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        view.endEditing(true)
+        searchBar.resignFirstResponder()
         if let word = searchBar.text {
             viewModel.searchQiitaArticles(query: word)
         }
     }
 
-    
 }

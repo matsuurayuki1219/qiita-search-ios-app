@@ -17,7 +17,7 @@ class QiitaApiClient {
     func searchQiitaArticles(page: Int, perPage: Int, query: String?) -> AnyPublisher<[QiitaArticleEntity], Error> {
         var baseURL = "https://qiita.com/api/v2/items/?page=\(page)&per_page=\(perPage)"
         if query != nil {
-            baseURL += "&query=\(query)"
+            baseURL += "&query=\(query!)"
         }
         let url = URL(string: baseURL)!
         return URLSession.shared.dataTaskPublisher(for: url)
