@@ -10,6 +10,7 @@
 		D21538E72AC99CC10012C2CE /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = D21538E62AC99CC10012C2CE /* Nuke */; };
 		D21538E92AC99CC10012C2CE /* NukeExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = D21538E82AC99CC10012C2CE /* NukeExtensions */; };
 		D26BC7732AC94EAC0022BF78 /* HomeViewController+QiitaArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26BC7722AC94EAC0022BF78 /* HomeViewController+QiitaArticleView.swift */; };
+		D26DCEC12AD42D8400FFD4E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D26DCEC02AD42D8400FFD4E4 /* LaunchScreen.storyboard */; };
 		D27C763B2AD1383700A1348A /* UIFont+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27C763A2AD1383700A1348A /* UIFont+Util.swift */; };
 		D27C763D2AD1396000A1348A /* UIImageView+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27C763C2AD1396000A1348A /* UIImageView+Util.swift */; };
 		D27C763F2AD13E3600A1348A /* HomeViewController+QiitaArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27C763E2AD13E3600A1348A /* HomeViewController+QiitaArticleCell.swift */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		D26BC7722AC94EAC0022BF78 /* HomeViewController+QiitaArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+QiitaArticleView.swift"; sourceTree = "<group>"; };
+		D26DCEC02AD42D8400FFD4E4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D27C763A2AD1383700A1348A /* UIFont+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Util.swift"; sourceTree = "<group>"; };
 		D27C763C2AD1396000A1348A /* UIImageView+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Util.swift"; sourceTree = "<group>"; };
 		D27C763E2AD13E3600A1348A /* HomeViewController+QiitaArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+QiitaArticleCell.swift"; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				D2CC3B562AC93D16002A2783 /* ViewController */,
 				D2CC3B422AC93C66002A2783 /* AppDelegate.swift */,
 				D2CC3B442AC93C66002A2783 /* SceneDelegate.swift */,
+				D26DCEC02AD42D8400FFD4E4 /* LaunchScreen.storyboard */,
 				D2CC3B4B2AC93C6D002A2783 /* Assets.xcassets */,
 				D2CC3B502AC93C6D002A2783 /* Info.plist */,
 			);
@@ -245,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2CC3B4C2AC93C6D002A2783 /* Assets.xcassets in Resources */,
+				D26DCEC12AD42D8400FFD4E4 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +410,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = QiitaSearchIOSApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -432,6 +437,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = QiitaSearchIOSApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
