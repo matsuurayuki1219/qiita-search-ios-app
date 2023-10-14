@@ -15,8 +15,8 @@ extension QiitaArticleEntity {
             likesCount: likesCount,
             user: user.toModel(),
             tags: tags.map { $0.toModel() },
-            createdAt: createdAt,
-            updatedAt: updatedAt
+            createdAt: createdAt.toDate(),
+            updatedAt: updatedAt.toDate()
         )
     }
 }

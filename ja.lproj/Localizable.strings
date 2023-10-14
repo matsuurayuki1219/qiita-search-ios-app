@@ -7,3 +7,5 @@
 */
 
 "home.seach_filed_placeholder" = "記事を検索しよう";
+
+"common.date_format" = "yyyy年MM月dd日HH時mm分";

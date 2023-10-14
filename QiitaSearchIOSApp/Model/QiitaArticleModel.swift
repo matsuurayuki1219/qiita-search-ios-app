@@ -13,6 +13,6 @@ struct QiitaArticleModel {
     let likesCount: Int
     let user: UserModel
     let tags: [TagModel]
-    let createdAt: String
-    let updatedAt: String
+    let createdAt: Date
+    let updatedAt: Date
 }

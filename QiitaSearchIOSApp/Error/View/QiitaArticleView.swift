@@ -161,7 +161,7 @@ private extension QiitaArticleView {
 
         // label
         userNameLabel.text = article.user.id
-        createdAtLabel.text = article.createdAt
+        createdAtLabel.text = article.createdAt.toAppString()
         titleLabel.text = article.title
         favoriteLabel.text = String(article.likesCount)
 
