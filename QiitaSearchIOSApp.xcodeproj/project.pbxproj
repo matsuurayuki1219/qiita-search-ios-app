@@ -13,6 +13,7 @@
 		D234FCF12ADACF11001B37F2 /* TagListView in Frameworks */ = {isa = PBXBuildFile; productRef = D234FCF02ADACF11001B37F2 /* TagListView */; };
 		D234FCF32ADAD4FF001B37F2 /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = D234FCF22ADAD4FF001B37F2 /* String+Date.swift */; };
 		D234FCF52ADAD5BF001B37F2 /* Date+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = D234FCF42ADAD5BF001B37F2 /* Date+String.swift */; };
+		D234FCF82ADAD987001B37F2 /* GetQiitaArticleUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D234FCF72ADAD987001B37F2 /* GetQiitaArticleUseCase.swift */; };
 		D26DCEC12AD42D8400FFD4E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D26DCEC02AD42D8400FFD4E4 /* LaunchScreen.storyboard */; };
 		D26DCECB2AD4310400FFD4E4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D26DCECD2AD4310400FFD4E4 /* Localizable.strings */; };
 		D27C763B2AD1383700A1348A /* UIFont+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27C763A2AD1383700A1348A /* UIFont+Util.swift */; };
@@ -41,6 +42,7 @@
 		D234FCE92ADAC252001B37F2 /* QiitaArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaArticleView.swift; sourceTree = "<group>"; };
 		D234FCF22ADAD4FF001B37F2 /* String+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Date.swift"; sourceTree = "<group>"; };
 		D234FCF42ADAD5BF001B37F2 /* Date+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+String.swift"; sourceTree = "<group>"; };
+		D234FCF72ADAD987001B37F2 /* GetQiitaArticleUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetQiitaArticleUseCase.swift; sourceTree = "<group>"; };
 		D26DCEC02AD42D8400FFD4E4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D26DCECC2AD4310400FFD4E4 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D27C763A2AD1383700A1348A /* UIFont+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Util.swift"; sourceTree = "<group>"; };
@@ -90,6 +92,14 @@
 			path = Error/View;
 			sourceTree = "<group>";
 		};
+		D234FCF62ADAD977001B37F2 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				D234FCF72ADAD987001B37F2 /* GetQiitaArticleUseCase.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
 		D27C76402AD1412800A1348A /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +135,7 @@
 		D2CC3B412AC93C66002A2783 /* QiitaSearchIOSApp */ = {
 			isa = PBXGroup;
 			children = (
+				D234FCF62ADAD977001B37F2 /* Domain */,
 				D234FCE82ADAC239001B37F2 /* View */,
 				D28C95092ADA7D02000C092B /* Error */,
 				D27C76402AD1412800A1348A /* View */,
@@ -295,6 +306,7 @@
 			files = (
 				D234FCF32ADAD4FF001B37F2 /* String+Date.swift in Sources */,
 				D2CC3B642AC93F08002A2783 /* QiitaApi.swift in Sources */,
+				D234FCF82ADAD987001B37F2 /* GetQiitaArticleUseCase.swift in Sources */,
 				D27C763F2AD13E3600A1348A /* HomeViewController+QiitaArticleCell.swift in Sources */,
 				D2CC3B6F2AC94588002A2783 /* Converter.swift in Sources */,
 				D2CC3B432AC93C66002A2783 /* AppDelegate.swift in Sources */,
