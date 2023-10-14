@@ -28,6 +28,7 @@ class HomeViewController: UIViewController {
         tableView.delegate = self
         tableView.separatorStyle = .none
         tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.backgroundColor = .clear
         return tableView
     }()
 
@@ -59,6 +60,8 @@ class HomeViewController: UIViewController {
 
         view.addSubview(tableView)
         view.addSubview(indicatorView)
+
+        view.backgroundColor = .gray10
 
         setConstraint()
         addObserver()

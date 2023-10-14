@@ -49,10 +49,10 @@ extension HomeViewController {
         }()
 
         private lazy var favoriteImageView = {
-            let image = UIImage(systemName: "heart")
+            let image = UIImage(systemName: "heart.fill")
             let imageView = UIImageView()
             imageView.image = image
-            imageView.tintColor = .gray50
+            imageView.tintColor = .yellow90
             imageView.translatesAutoresizingMaskIntoConstraints = false
             return imageView
         }()
@@ -70,7 +70,7 @@ extension HomeViewController {
         override init(frame: CGRect) {
             super.init(frame: frame)
 
-            backgroundColor = .gray40
+            backgroundColor = .white
             layer.cornerRadius = 12
 
             addSubview(profileImage)

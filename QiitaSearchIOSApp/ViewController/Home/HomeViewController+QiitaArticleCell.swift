@@ -37,6 +37,8 @@ extension HomeViewController {
 
             addSubview(articleView)
 
+            backgroundColor = .clear
+
             articleView.topAnchor.constraint(equalTo: topAnchor).isActive = true
             articleView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20).isActive = true
             articleView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20).isActive = true
