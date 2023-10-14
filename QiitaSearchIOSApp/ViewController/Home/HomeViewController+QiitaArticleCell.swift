@@ -18,7 +18,9 @@ extension HomeViewController {
 
         var article: QiitaArticleModel? {
             didSet {
-                articleView.update(article: article)
+                guard let article = article else { return }
+                articleView.article = article
+                setNeedsLayout()
             }
         }
 

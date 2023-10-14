@@ -34,8 +34,8 @@ class HomeViewController: UIViewController {
 
     lazy var indicatorView = {
         let view = UIActivityIndicatorView()
-        view.style = .medium
-        view.color = .gray
+        view.style = .large
+        view.color = .green40
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()

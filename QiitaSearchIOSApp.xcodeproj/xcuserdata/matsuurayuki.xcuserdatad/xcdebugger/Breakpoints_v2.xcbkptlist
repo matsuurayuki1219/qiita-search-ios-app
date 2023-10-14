@@ -23,54 +23,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "FA76A707-D68C-4F84-B97A-0F35BEDA92C6"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "QiitaSearchIOSApp/ViewController/Home/HomeViewController+QiitaArticleView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "101"
-            endingLineNumber = "101"
-            landmarkName = "QiitaArticleView"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  uuid = "FA76A707-D68C-4F84-B97A-0F35BEDA92C6 - d51ad254cf9ecc55"
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "QiitaSearchIOSApp.HomeViewController.QiitaArticleView.update(article: Swift.Optional&lt;QiitaSearchIOSApp.QiitaArticleModel&gt;) -&gt; ()"
-                  moduleName = "QiitaSearchIOSApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/matsuurayuki/Documents/GitHub/Personal/qiita-search-ios-app/QiitaSearchIOSApp/QiitaSearchIOSApp/ViewController/Home/HomeViewController+QiitaArticleView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "87"
-                  endingLineNumber = "87"
-                  offsetFromSymbolStart = "196">
-               </Location>
-               <Location
-                  uuid = "FA76A707-D68C-4F84-B97A-0F35BEDA92C6 - d51ad254cf9ecc55"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "QiitaSearchIOSApp.HomeViewController.QiitaArticleView.update(article: Swift.Optional&lt;QiitaSearchIOSApp.QiitaArticleModel&gt;) -&gt; ()"
-                  moduleName = "QiitaSearchIOSApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/matsuurayuki/Documents/GitHub/Personal/qiita-search-ios-app/QiitaSearchIOSApp/QiitaSearchIOSApp/ViewController/Home/HomeViewController+QiitaArticleView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "87"
-                  endingLineNumber = "87"
-                  offsetFromSymbolStart = "252">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "9BB7E01E-78D5-44A7-BA87-DFD73F04339E"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -78,8 +30,8 @@
             filePath = "QiitaSearchIOSApp/ViewController/Home/HomeViewController+QiitaArticleView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
             landmarkName = "HomeViewController"
             landmarkType = "21">
          </BreakpointContent>

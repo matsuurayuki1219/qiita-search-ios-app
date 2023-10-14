@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		D21538E72AC99CC10012C2CE /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = D21538E62AC99CC10012C2CE /* Nuke */; };
 		D21538E92AC99CC10012C2CE /* NukeExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = D21538E82AC99CC10012C2CE /* NukeExtensions */; };
-		D26BC7732AC94EAC0022BF78 /* HomeViewController+QiitaArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26BC7722AC94EAC0022BF78 /* HomeViewController+QiitaArticleView.swift */; };
+		D234FCEA2ADAC252001B37F2 /* QiitaArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D234FCE92ADAC252001B37F2 /* QiitaArticleView.swift */; };
+		D234FCF12ADACF11001B37F2 /* TagListView in Frameworks */ = {isa = PBXBuildFile; productRef = D234FCF02ADACF11001B37F2 /* TagListView */; };
 		D26DCEC12AD42D8400FFD4E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D26DCEC02AD42D8400FFD4E4 /* LaunchScreen.storyboard */; };
 		D26DCECB2AD4310400FFD4E4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D26DCECD2AD4310400FFD4E4 /* Localizable.strings */; };
 		D27C763B2AD1383700A1348A /* UIFont+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27C763A2AD1383700A1348A /* UIFont+Util.swift */; };
@@ -35,7 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D26BC7722AC94EAC0022BF78 /* HomeViewController+QiitaArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+QiitaArticleView.swift"; sourceTree = "<group>"; };
+		D234FCE92ADAC252001B37F2 /* QiitaArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaArticleView.swift; sourceTree = "<group>"; };
 		D26DCEC02AD42D8400FFD4E4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D26DCECC2AD4310400FFD4E4 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D27C763A2AD1383700A1348A /* UIFont+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Util.swift"; sourceTree = "<group>"; };
@@ -68,6 +69,7 @@
 			files = (
 				D2D14BB42AD28A51008BCDC1 /* UIColorHexSwift in Frameworks */,
 				D21538E72AC99CC10012C2CE /* Nuke in Frameworks */,
+				D234FCF12ADACF11001B37F2 /* TagListView in Frameworks */,
 				D21538E92AC99CC10012C2CE /* NukeExtensions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,6 +77,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D234FCE82ADAC239001B37F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D234FCE92ADAC252001B37F2 /* QiitaArticleView.swift */,
+			);
+			name = View;
+			path = Error/View;
+			sourceTree = "<group>";
+		};
 		D27C76402AD1412800A1348A /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +121,7 @@
 		D2CC3B412AC93C66002A2783 /* QiitaSearchIOSApp */ = {
 			isa = PBXGroup;
 			children = (
+				D234FCE82ADAC239001B37F2 /* View */,
 				D28C95092ADA7D02000C092B /* Error */,
 				D27C76402AD1412800A1348A /* View */,
 				D2CC3B772AC946C4002A2783 /* Repository */,
@@ -157,7 +169,6 @@
 		D2CC3B5F2AC93EB8002A2783 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				D26BC7722AC94EAC0022BF78 /* HomeViewController+QiitaArticleView.swift */,
 				D2CC3B5B2AC93D65002A2783 /* HomeViewController.swift */,
 				D27C763E2AD13E3600A1348A /* HomeViewController+QiitaArticleCell.swift */,
 				D2CC3B5D2AC93E0E002A2783 /* HomeViewModel.swift */,
@@ -213,6 +224,7 @@
 				D21538E62AC99CC10012C2CE /* Nuke */,
 				D21538E82AC99CC10012C2CE /* NukeExtensions */,
 				D2D14BB32AD28A51008BCDC1 /* UIColorHexSwift */,
+				D234FCF02ADACF11001B37F2 /* TagListView */,
 			);
 			productName = QiitaSearchIOSApp;
 			productReference = D2CC3B3F2AC93C66002A2783 /* QiitaSearchIOSApp.app */;
@@ -246,6 +258,7 @@
 			packageReferences = (
 				D21538E52AC99CC10012C2CE /* XCRemoteSwiftPackageReference "Nuke" */,
 				D2D14BB22AD28A51008BCDC1 /* XCRemoteSwiftPackageReference "UIColor-Hex-Swift" */,
+				D234FCEF2ADACF11001B37F2 /* XCRemoteSwiftPackageReference "TagListView" */,
 			);
 			productRefGroup = D2CC3B402AC93C66002A2783 /* Products */;
 			projectDirPath = "";
@@ -288,8 +301,8 @@
 				D2D14BB12AD289E9008BCDC1 /* UIColor+Util.swift in Sources */,
 				D28C950B2ADA7D0B000C092B /* ApiError.swift in Sources */,
 				D27C763B2AD1383700A1348A /* UIFont+Util.swift in Sources */,
-				D26BC7732AC94EAC0022BF78 /* HomeViewController+QiitaArticleView.swift in Sources */,
 				D2CC3B452AC93C66002A2783 /* SceneDelegate.swift in Sources */,
+				D234FCEA2ADAC252001B37F2 /* QiitaArticleView.swift in Sources */,
 				D2CC3B6B2AC940F7002A2783 /* TagEntity.swift in Sources */,
 				D2CC3B5E2AC93E0E002A2783 /* HomeViewModel.swift in Sources */,
 				D2CC3B5C2AC93D65002A2783 /* HomeViewController.swift in Sources */,
@@ -516,6 +529,14 @@
 				minimumVersion = 12.0.0;
 			};
 		};
+		D234FCEF2ADACF11001B37F2 /* XCRemoteSwiftPackageReference "TagListView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ElaWorkshop/TagListView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		D2D14BB22AD28A51008BCDC1 /* XCRemoteSwiftPackageReference "UIColor-Hex-Swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/yeahdongcn/UIColor-Hex-Swift.git";
@@ -536,6 +557,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D21538E52AC99CC10012C2CE /* XCRemoteSwiftPackageReference "Nuke" */;
 			productName = NukeExtensions;
+		};
+		D234FCF02ADACF11001B37F2 /* TagListView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D234FCEF2ADACF11001B37F2 /* XCRemoteSwiftPackageReference "TagListView" */;
+			productName = TagListView;
 		};
 		D2D14BB32AD28A51008BCDC1 /* UIColorHexSwift */ = {
 			isa = XCSwiftPackageProductDependency;

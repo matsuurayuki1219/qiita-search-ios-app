@@ -12,10 +12,12 @@ extension UIFont {
 
     // MARK: - Regular
 
+    static let regular12 = UIFont.systemFont(ofSize: 12, weight: .regular)
     static let regular14 = UIFont.systemFont(ofSize: 14, weight: .regular)
     static let regular16 = UIFont.systemFont(ofSize: 16, weight: .regular)
 
     // MARK: - Bold
+    
     static let bold18 = UIFont.systemFont(ofSize: 18, weight: .bold)
     
 }
