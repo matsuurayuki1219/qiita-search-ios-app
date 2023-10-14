@@ -31,10 +31,18 @@ class HomeViewController: UIViewController {
         return tableView
     }()
 
+    lazy var indicatorView = {
+        let view = UIActivityIndicatorView()
+        view.style = .medium
+        view.color = .gray
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+
     // MARK: - Combine
 
     private let viewModel = HomeViewModel()
-    private var cancellable: AnyCancellable?
+    private var cancellables: Set<AnyCancellable> = []
 
     // MARK: - Model
 
@@ -50,6 +58,8 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
 
         view.addSubview(tableView)
+        view.addSubview(indicatorView)
+
         setConstraint()
         addObserver()
 
@@ -73,6 +83,12 @@ private extension HomeViewController {
         tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+
+        indicatorView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        indicatorView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        indicatorView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        indicatorView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+
     }
 
 }
@@ -82,17 +98,19 @@ private extension HomeViewController {
 private extension HomeViewController {
 
     func addObserver() {
-        cancellable = viewModel.$articles
-            .sink { completion in
-                switch completion {
-                case .finished:
-                    break
-                case .failure(_):
-                    break
-                }
-            } receiveValue: { articles in
+        viewModel.$articles
+            .sink(receiveValue: { articles in
                 self.articles = articles
-            }
+            }).store(in: &cancellables)
+
+        viewModel.$isLoading
+            .sink(receiveValue: { isLoading in
+                if isLoading {
+                    self.indicatorView.startAnimating()
+                } else {
+                    self.indicatorView.stopAnimating()
+                }
+            }).store(in: &cancellables)
     }
     
 }

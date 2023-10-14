@@ -6,15 +6,11 @@
 //
 
 import Foundation
-import Combine
 
 class QiitaRepository {
 
-    func searchQiitaArticles(page: Int, perPage: Int, query: String?) -> AnyPublisher<[QiitaArticleModel], Error> {
-        return QiitaApiClient.shared.searchQiitaArticles(page: page, perPage: perPage, query: query)
-            .map { $0.map { $0.toModel() } }
-            .receive(on: DispatchQueue.main)
-            .eraseToAnyPublisher()
+    func searchQiitaArticles(page: Int, perPage: Int, query: String?) async throws -> [QiitaArticleModel] {
+        return try await QiitaApi.searchQiitaArticles(page: page, perPage: perPage, query: query).map { $0.toModel() }
     }
     
 }
