@@ -15,12 +15,13 @@
 		D27C763B2AD1383700A1348A /* UIFont+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27C763A2AD1383700A1348A /* UIFont+Util.swift */; };
 		D27C763D2AD1396000A1348A /* UIImageView+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27C763C2AD1396000A1348A /* UIImageView+Util.swift */; };
 		D27C763F2AD13E3600A1348A /* HomeViewController+QiitaArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27C763E2AD13E3600A1348A /* HomeViewController+QiitaArticleCell.swift */; };
+		D28C950B2ADA7D0B000C092B /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28C950A2ADA7D0B000C092B /* ApiError.swift */; };
 		D2CC3B432AC93C66002A2783 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC3B422AC93C66002A2783 /* AppDelegate.swift */; };
 		D2CC3B452AC93C66002A2783 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC3B442AC93C66002A2783 /* SceneDelegate.swift */; };
 		D2CC3B4C2AC93C6D002A2783 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2CC3B4B2AC93C6D002A2783 /* Assets.xcassets */; };
 		D2CC3B5C2AC93D65002A2783 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC3B5B2AC93D65002A2783 /* HomeViewController.swift */; };
 		D2CC3B5E2AC93E0E002A2783 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC3B5D2AC93E0E002A2783 /* HomeViewModel.swift */; };
-		D2CC3B642AC93F08002A2783 /* QiitaApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC3B632AC93F08002A2783 /* QiitaApiClient.swift */; };
+		D2CC3B642AC93F08002A2783 /* QiitaApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC3B632AC93F08002A2783 /* QiitaApi.swift */; };
 		D2CC3B662AC93F92002A2783 /* QiitaArticleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC3B652AC93F92002A2783 /* QiitaArticleEntity.swift */; };
 		D2CC3B692AC9409E002A2783 /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC3B682AC9409E002A2783 /* UserEntity.swift */; };
 		D2CC3B6B2AC940F7002A2783 /* TagEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC3B6A2AC940F7002A2783 /* TagEntity.swift */; };
@@ -40,6 +41,7 @@
 		D27C763A2AD1383700A1348A /* UIFont+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Util.swift"; sourceTree = "<group>"; };
 		D27C763C2AD1396000A1348A /* UIImageView+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Util.swift"; sourceTree = "<group>"; };
 		D27C763E2AD13E3600A1348A /* HomeViewController+QiitaArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+QiitaArticleCell.swift"; sourceTree = "<group>"; };
+		D28C950A2ADA7D0B000C092B /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		D2CC3B3F2AC93C66002A2783 /* QiitaSearchIOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QiitaSearchIOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2CC3B422AC93C66002A2783 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2CC3B442AC93C66002A2783 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,7 +49,7 @@
 		D2CC3B502AC93C6D002A2783 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2CC3B5B2AC93D65002A2783 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D2CC3B5D2AC93E0E002A2783 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		D2CC3B632AC93F08002A2783 /* QiitaApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaApiClient.swift; sourceTree = "<group>"; };
+		D2CC3B632AC93F08002A2783 /* QiitaApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaApi.swift; sourceTree = "<group>"; };
 		D2CC3B652AC93F92002A2783 /* QiitaArticleEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaArticleEntity.swift; sourceTree = "<group>"; };
 		D2CC3B682AC9409E002A2783 /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
 		D2CC3B6A2AC940F7002A2783 /* TagEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagEntity.swift; sourceTree = "<group>"; };
@@ -80,6 +82,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		D28C95092ADA7D02000C092B /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				D28C950A2ADA7D0B000C092B /* ApiError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
 		D2CC3B362AC93C66002A2783 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +110,7 @@
 		D2CC3B412AC93C66002A2783 /* QiitaSearchIOSApp */ = {
 			isa = PBXGroup;
 			children = (
+				D28C95092ADA7D02000C092B /* Error */,
 				D27C76402AD1412800A1348A /* View */,
 				D2CC3B772AC946C4002A2783 /* Repository */,
 				D2CC3B622AC93EF0002A2783 /* API */,
@@ -158,7 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				D2CC3B672AC94092002A2783 /* Entity */,
-				D2CC3B632AC93F08002A2783 /* QiitaApiClient.swift */,
+				D2CC3B632AC93F08002A2783 /* QiitaApi.swift */,
 				D2CC3B6E2AC94588002A2783 /* Converter.swift */,
 			);
 			path = API;
@@ -263,7 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2CC3B642AC93F08002A2783 /* QiitaApiClient.swift in Sources */,
+				D2CC3B642AC93F08002A2783 /* QiitaApi.swift in Sources */,
 				D27C763F2AD13E3600A1348A /* HomeViewController+QiitaArticleCell.swift in Sources */,
 				D2CC3B6F2AC94588002A2783 /* Converter.swift in Sources */,
 				D2CC3B432AC93C66002A2783 /* AppDelegate.swift in Sources */,
@@ -275,6 +286,7 @@
 				D2CC3B712AC945A9002A2783 /* QiitaArticleModel.swift in Sources */,
 				D2CC3B792AC946D0002A2783 /* QiitaRepository.swift in Sources */,
 				D2D14BB12AD289E9008BCDC1 /* UIColor+Util.swift in Sources */,
+				D28C950B2ADA7D0B000C092B /* ApiError.swift in Sources */,
 				D27C763B2AD1383700A1348A /* UIFont+Util.swift in Sources */,
 				D26BC7732AC94EAC0022BF78 /* HomeViewController+QiitaArticleView.swift in Sources */,
 				D2CC3B452AC93C66002A2783 /* SceneDelegate.swift in Sources */,
@@ -428,6 +440,8 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,6 +469,8 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

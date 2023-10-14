@@ -8,11 +8,14 @@
 import Foundation
 import Combine
 
+@MainActor
 class HomeViewModel: ObservableObject {
 
     private let repository: QiitaRepository
 
     @Published var articles: [QiitaArticleModel] = []
+
+    @Published var isLoading: Bool = false
 
     private var cancellables = Set<AnyCancellable>()
 
@@ -21,16 +24,15 @@ class HomeViewModel: ObservableObject {
     }
 
     func searchQiitaArticles(query: String?) {
-        repository.searchQiitaArticles(page: 1, perPage: 20, query: query)
-            .sink { completion in
-                switch completion {
-                case .finished:
-                    break
-                case .failure(_):
-                    break
-                }
-            } receiveValue: { articles in
-                self.articles = articles
-            }.store(in: &cancellables)
+        Task {
+            do {
+                isLoading = true
+                let data = try await repository.searchQiitaArticles(page: 1, perPage: 20, query: query)
+                articles = data
+                isLoading = false
+            } catch {
+                isLoading = false
+            }
+        }
     }
 }
