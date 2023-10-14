@@ -18,3 +18,4 @@ MVVM ✖️ Clean Architecture
 - Swift Concurrency
 - Nuke
 - UIColorHexSwift
+- TagListView
