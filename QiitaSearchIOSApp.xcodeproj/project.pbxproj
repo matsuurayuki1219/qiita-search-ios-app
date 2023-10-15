@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		D21538E72AC99CC10012C2CE /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = D21538E62AC99CC10012C2CE /* Nuke */; };
 		D21538E92AC99CC10012C2CE /* NukeExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = D21538E82AC99CC10012C2CE /* NukeExtensions */; };
-		D234FCEA2ADAC252001B37F2 /* QiitaArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D234FCE92ADAC252001B37F2 /* QiitaArticleView.swift */; };
+		D23091172ADBA153008B7BA4 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23091162ADBA153008B7BA4 /* Constant.swift */; };
+		D23091192ADBA590008B7BA4 /* QiitaArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23091182ADBA590008B7BA4 /* QiitaArticleView.swift */; };
 		D234FCF12ADACF11001B37F2 /* TagListView in Frameworks */ = {isa = PBXBuildFile; productRef = D234FCF02ADACF11001B37F2 /* TagListView */; };
 		D234FCF32ADAD4FF001B37F2 /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = D234FCF22ADAD4FF001B37F2 /* String+Date.swift */; };
 		D234FCF52ADAD5BF001B37F2 /* Date+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = D234FCF42ADAD5BF001B37F2 /* Date+String.swift */; };
@@ -39,7 +40,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D234FCE92ADAC252001B37F2 /* QiitaArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaArticleView.swift; sourceTree = "<group>"; };
+		D23091162ADBA153008B7BA4 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		D23091182ADBA590008B7BA4 /* QiitaArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QiitaArticleView.swift; path = QiitaSearchIOSApp/Utility/QiitaArticleView.swift; sourceTree = SOURCE_ROOT; };
 		D234FCF22ADAD4FF001B37F2 /* String+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Date.swift"; sourceTree = "<group>"; };
 		D234FCF42ADAD5BF001B37F2 /* Date+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+String.swift"; sourceTree = "<group>"; };
 		D234FCF72ADAD987001B37F2 /* GetQiitaArticleUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetQiitaArticleUseCase.swift; sourceTree = "<group>"; };
@@ -86,7 +88,7 @@
 		D234FCE82ADAC239001B37F2 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D234FCE92ADAC252001B37F2 /* QiitaArticleView.swift */,
+				D23091182ADBA590008B7BA4 /* QiitaArticleView.swift */,
 			);
 			name = View;
 			path = Error/View;
@@ -98,13 +100,6 @@
 				D234FCF72ADAD987001B37F2 /* GetQiitaArticleUseCase.swift */,
 			);
 			path = Domain;
-			sourceTree = "<group>";
-		};
-		D27C76402AD1412800A1348A /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		D28C95092ADA7D02000C092B /* Error */ = {
@@ -138,7 +133,6 @@
 				D234FCF62ADAD977001B37F2 /* Domain */,
 				D234FCE82ADAC239001B37F2 /* View */,
 				D28C95092ADA7D02000C092B /* Error */,
-				D27C76402AD1412800A1348A /* View */,
 				D2CC3B772AC946C4002A2783 /* Repository */,
 				D2CC3B622AC93EF0002A2783 /* API */,
 				D2CC3B5A2AC93D55002A2783 /* Model */,
@@ -169,6 +163,7 @@
 				D27C763C2AD1396000A1348A /* UIImageView+Util.swift */,
 				D234FCF22ADAD4FF001B37F2 /* String+Date.swift */,
 				D234FCF42ADAD5BF001B37F2 /* Date+String.swift */,
+				D23091162ADBA153008B7BA4 /* Constant.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -314,15 +309,16 @@
 				D2CC3B732AC945B8002A2783 /* UserModel.swift in Sources */,
 				D2CC3B692AC9409E002A2783 /* UserEntity.swift in Sources */,
 				D2CC3B662AC93F92002A2783 /* QiitaArticleEntity.swift in Sources */,
+				D23091172ADBA153008B7BA4 /* Constant.swift in Sources */,
 				D2CC3B752AC945C1002A2783 /* TagModel.swift in Sources */,
 				D2CC3B712AC945A9002A2783 /* QiitaArticleModel.swift in Sources */,
 				D2CC3B792AC946D0002A2783 /* QiitaRepository.swift in Sources */,
 				D2D14BB12AD289E9008BCDC1 /* UIColor+Util.swift in Sources */,
 				D28C950B2ADA7D0B000C092B /* ApiError.swift in Sources */,
+				D23091192ADBA590008B7BA4 /* QiitaArticleView.swift in Sources */,
 				D234FCF52ADAD5BF001B37F2 /* Date+String.swift in Sources */,
 				D27C763B2AD1383700A1348A /* UIFont+Util.swift in Sources */,
 				D2CC3B452AC93C66002A2783 /* SceneDelegate.swift in Sources */,
-				D234FCEA2ADAC252001B37F2 /* QiitaArticleView.swift in Sources */,
 				D2CC3B6B2AC940F7002A2783 /* TagEntity.swift in Sources */,
 				D2CC3B5E2AC93E0E002A2783 /* HomeViewModel.swift in Sources */,
 				D2CC3B5C2AC93D65002A2783 /* HomeViewController.swift in Sources */,

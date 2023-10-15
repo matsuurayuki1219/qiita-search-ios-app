@@ -11,7 +11,7 @@ import Combine
 @MainActor
 class HomeViewModel: ObservableObject {
 
-    private let getArticles: GetQiitaArticleUseCase
+    private let useCase: GetQiitaArticleUseCase
 
     @Published var articles: [QiitaArticleModel] = []
 
@@ -19,20 +19,32 @@ class HomeViewModel: ObservableObject {
 
     private var cancellables = Set<AnyCancellable>()
 
+    private var currentPage: Int = 0
+
+    private var query: String? = nil
+
     init(useCase: GetQiitaArticleUseCase = GetQiitaArticleUseCase()) {
-        self.getArticles = useCase
+        self.useCase = useCase
     }
 
-    func searchQiitaArticles(query: String?) {
+    func loadQiitaArticles(query: String? = nil, isLoadMore: Bool) {
+        if isLoadMore {
+            currentPage += 1
+        } else {
+            self.query = query
+            articles = []
+            currentPage = 1
+        }
         Task {
             do {
                 isLoading = true
-                let data = try await getArticles.execute(page: 1, perPage: 20, query: query)
-                articles = data
+                let data = try await useCase.execute(page: currentPage, perPage: Constant.pageCount, query: self.query)
+                articles += data
                 isLoading = false
             } catch {
                 isLoading = false
             }
         }
     }
+
 }

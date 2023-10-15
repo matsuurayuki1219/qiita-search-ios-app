@@ -72,7 +72,7 @@ class HomeViewController: UIViewController {
             navigationItem.titleView?.frame = searchBar.frame
         }
 
-        viewModel.searchQiitaArticles(query: nil)
+        viewModel.loadQiitaArticles(isLoadMore: false)
     }
 
 }
@@ -163,6 +163,13 @@ extension HomeViewController: UITableViewDelegate {
         }
     }
 
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.section == tableView.numberOfSections - 1 &&
+            indexPath.row == tableView.numberOfRows(inSection: indexPath.section) - 1 {
+            viewModel.loadQiitaArticles(isLoadMore: true)
+        }
+    }
+
 }
 
 // MARK: - UISearchBarDelegate
@@ -172,7 +179,7 @@ extension HomeViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchBar.resignFirstResponder()
         if let word = searchBar.text {
-            viewModel.searchQiitaArticles(query: word)
+            viewModel.loadQiitaArticles(query: word, isLoadMore: false)
         }
     }
 
