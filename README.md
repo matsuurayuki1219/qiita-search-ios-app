@@ -14,6 +14,7 @@ MVVM ✖️ Clean Architecture
 
 ## Dependency
 - UIKit
+- AutoLayout
 - Combine
 - Swift Concurrency
 - Nuke
